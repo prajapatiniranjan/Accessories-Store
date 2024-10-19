@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#necklaces">Necklaces</a></li>
+                <li><a href="#bracelets">Bracelets</a></li>
+                <li><a href="#earrings">Earrings</a></li>
+                <li><a href="#watches">Watches</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Accessories Catalog</h2>
+<section id="necklaces">
+    <h3>Necklaces</h3>
+    <div class="product-gallery">
+       <img src="/neckless/2.jpeg" alt=""><img src="/neckless/3.jpeg" alt=""><img src="/neckless/4.jpeg" alt=""><img src="/neckless/download.jpg" alt="">
+    </div>
+</section>
+
+<section id="bracelets">
+    <h3>Bracelets</h3>
+    <div class="product-gallery">
+        <img src="/Bracelets/2.jpeg" alt=""><img src="/Bracelets/3.jpeg" alt=""><img src="/Bracelets/4.jpeg" alt=""><img src="/Bracelets/download.jpeg" alt="">
+    </div>
+</section>
+
+<section id="earrings">
+    <h3>Earrings</h3>
+    <div class="product-gallery">
+       <img src="/Earrings/2.jpeg" alt=""><img src="/Earrings/3.jpeg" alt=""><img src="/Bracelets/4.jpeg" alt=""><img src="/Earrings/download (1).jpeg" alt="">
+    </div>
+</section>
+
+<section id="watches">
+    <h3>Watches</h3>
+   <img src="/Watches/2.jpeg" alt=""><img src="/Watches/3.jpeg" alt=""><img src="/Watches/4.jpeg" alt=""><img src="/Watches/download.jpeg" alt="">
+</section>
+
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Accessories Store</h2>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@accessoriesstore.com">info@accessoriesstore.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook"><img src="path/to/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+                    </li>
+                    <li><a href="#" aria-label="Twitter"><img src="path/to/twitter-icon.png" alt="Twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Accessories Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
